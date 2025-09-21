@@ -17,3 +17,6 @@ aiofiles
 aiohttp
 python-jose[cryptography]
 python-dotenv
+langchain-google-genai
+tavily-python
+langchain-community
