@@ -88,7 +88,7 @@ class LangChainFactChecker:
             self.search_available = False
             if tavily_api_key:
                 try:
-                    self.tavily_client = TavilyClient(api_key="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")
+                    self.tavily_client = TavilyClient(api_key="tavily_api_key")
                     self.search_tool = TavilySearchResults(
                         api_wrapper=self.tavily_client,
                         max_results=5,
