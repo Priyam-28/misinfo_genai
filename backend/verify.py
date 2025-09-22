@@ -293,8 +293,8 @@ async def startup_event():
     global fact_checker
     
     # Get API keys from environment
-    gemini_api_key = os.getenv("GEMINI_API_KEY", "AIzaSyDbLxMyUWb0VfBE74ax1f7PFDIKYt3rCJc")
-    tavily_api_key = os.getenv("TAVILY_API_KEY","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")  # Set this environment variable
+    gemini_api_key = os.getenv("GEMINI_API_KEY",)
+    tavily_api_key = os.getenv("TAVILY_API_KEY",)  # Set this environment variable
     
     if not gemini_api_key or gemini_api_key.startswith("YOUR_"):
         raise ValueError("❌ No valid Gemini API key found. Set GEMINI_API_KEY environment variable.")
